@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+/* Custom Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b8b7b7; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar handle on hover */
+  }
+
+
+  /* tailwind.css */
+@layer theme {
+  :root {
+    --color-primary: #007BFF; /* Electric Blue */
+    --color-secondary: #FFD700; /* Bright Yellow */
+    --color-accent: #FFA500; /* Bright Orange */
+    --color-background: #1A1A1A; /* Dark Gray */
+    --color-text-primary: #FFFFFF; /* White */
+  }
+}
+
+
+
+
+/* Ensure the navbar has a position context for the stars */
+nav {
+  position: relative;
+}
+
+/* Style for each star */
+.star {
+  position: absolute;
+  width: 3px; /* Small size for star-like effect */
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: fall linear infinite;
+}
+
+/* Unique starting positions and animation durations for each star */
+.star-1 {
+  left: 5%;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+.star-2 {
+  left: 15%;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+
+.star-3 {
+  left: 25%;
+  animation-duration: 3.5s;
+  animation-delay: 1s;
+}
+
+.star-4 {
+  left: 35%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+
+.star-5 {
+  left: 45%;
+  animation-duration: 6s;
+  animation-delay: 0.2s;
+}
+
+.star-6 {
+  left: 55%;
+  animation-duration: 5.5s;
+  animation-delay: 0.8s;
+}
+
+.star-7 {
+  left: 65%;
+  animation-duration: 4.2s;
+  animation-delay: 1.2s;
+}
+
+.star-8 {
+  left: 75%;
+  animation-duration: 5.8s;
+  animation-delay: 0.4s;
+}
+
+.star-9 {
+  left: 85%;
+  animation-duration: 3.8s;
+  animation-delay: 0.9s;
+}
+
+.star-10 {
+  left: 95%;
+  animation-duration: 4.8s;
+  animation-delay: 1.4s;
+}
+
+/* Animation keyframes for falling stars with random horizontal movement */
+@keyframes fall {
+  0% {
+    top: 0%;
+    transform: translateX(0);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translateX(10px); /* Slight random wiggle to the right */
+    opacity: 0.7;
+  }
+  50% {
+    top: 50%;
+    transform: translateX(-15px); /* Wiggle to the left */
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(5px); /* Small wiggle back */
+    opacity: 0.3;
+  }
+  100% {
+    top: 100%;
+    transform: translateX(-10px); /* End with a slight shift */
+    opacity: 0;
+  }
+}
+
+/* Ensure the stars stay behind the navbar content */
+nav .star {
+  z-index: 0;
+}
