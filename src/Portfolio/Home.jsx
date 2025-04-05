@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-const words = ["React Developer", "React Native Developer", "Web Developer", "Frontend Developer"];
+import {technologies} from "../data/about";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -10,7 +9,7 @@ const Home = () => {
   const [cursorVisible, setCursorVisible] = useState(true);
 
   useEffect(() => {
-    const currentWord = words[index];
+    const currentWord = technologies[index];
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         setText(currentWord.substring(0, text.length + 1));
@@ -24,7 +23,7 @@ const Home = () => {
         setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && text === "") {
         setIsDeleting(false);
-        setIndex((prev) => (prev + 1) % words.length);
+        setIndex((prev) => (prev + 1) % technologies.length);
       }
     }, speed);
 
@@ -59,13 +58,20 @@ const Home = () => {
 
       <button
         type="button"
+        onClick={() => {
+          const projectsSection = document.getElementById("projects");
+          if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
         className="text-white mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 
-        font-medium rounded-lg text-md px-6 sm:px-8 py-2.5 me-2 mb-2 
-        dark:bg-blue-600 dark:hover:bg-blue-700 transition-transform transform hover:-translate-y-1 
-        sm:hover:-translate-y-1.5"
+  font-medium rounded-lg text-md px-6 sm:px-8 py-2.5 me-2 mb-2 
+  dark:bg-blue-600 dark:hover:bg-blue-700 transition-transform transform hover:-translate-y-1 
+  sm:hover:-translate-y-1.5"
       >
         View My Work
       </button>
+
     </section>
   );
 };

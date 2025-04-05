@@ -11,3 +11,5 @@ export const about = [
         description: "I’m always open to connecting with others in the tech community, taking on new challenges, and growing as a developer. Feel free to check out my projects and reach out if you have an opportunity that matches my skills and experience."
     }
 ]
+
+export const technologies = ["React Developer", "React Native Developer", "Web Developer", "Frontend Developer"];

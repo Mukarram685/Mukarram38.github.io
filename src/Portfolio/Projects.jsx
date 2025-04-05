@@ -3,7 +3,7 @@ import ProjectsList from '../Portfolio/ProjectList';
 
 function Projects() {
   return (
-    <section id="projects" className="bg-[#1A1A1A] text-white px-4 py-12">
+    <section id="projects" className="bg-[#1A1A1A] text-white px-2 py-12">
         <ProjectsList/>
     </section>
   )

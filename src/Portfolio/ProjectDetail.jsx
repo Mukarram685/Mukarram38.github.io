@@ -64,6 +64,17 @@ const ProjectDetail = ({ project, onClose }) => {
                                         <p className="text-gray-300 mb-4">{project.longDescription}</p>
                                     )}
 
+                                    <h3 className='text-lg font-semibold text-blue-500 mb-2'>Features</h3>
+                                    {project.features && project.features.length > 0 ? (
+                                        <ul className="list-disc list-inside text-gray-300 mb-4">
+                                            {project.features.map((feature, index) => (
+                                                <li key={index} className="mb-2 list-none">{feature}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="text-gray-300">No features available.</p>
+                                    )}
+
                                     <h3 className="text-lg font-semibold text-white mb-2">Technologies Used</h3>
                                     <div className="flex flex-wrap gap-2 mb-6">
                                         {project.technologies.map((tech, index) => (

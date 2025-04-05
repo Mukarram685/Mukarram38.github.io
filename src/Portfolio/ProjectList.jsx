@@ -40,7 +40,7 @@ const ProjectsList = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={toggleShowAll}
-            className="px-6 py-2 bg-[#007BFF] text-white rounded-lg hover:bg-[#0056b3] transition-colors"
+            className="px-6 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-colors"
           >
             {showAll ? "Show Less" : "Show More Projects"}
           </button>
