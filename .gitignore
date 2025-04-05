@@ -1,63 +1,80 @@
-# Logs
-logs
-*.log
+# Dependency directories
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# IDE/Editor
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Dependencies
-node_modules/
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-
-# Build
-dist/
-build/
-.cache/
-.out/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# Editor & System files
-.vscode/
-.idea/
-*.swp
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Testing
-coverage/
-jest/
-cypress/
+# Tailwind CSS
+.tailwindcss
 
-# Misc
+# Cache
+.cache/
+
+# Next.js
+.next/
+
+# Gatsby
+.cache/
+# Comment in the public line if using a static site framework that doesn't use a separate public folder
+# public
+
+# Other
 *.log
-*.lock
-public/locales/
+logs
+*.tmp
+*.temp
+*~
+*.bak
+*.backup
 
+# Local Netlify folder
+.netlify
+
+# Vite
+*.local
+
+# ESLint
+.eslintcache
+
+# Optional
+.sass-cache/
+*.css.map
+*.js.map
+*.sass.map
+*.scss.map
