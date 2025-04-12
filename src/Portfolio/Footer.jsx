@@ -3,14 +3,19 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 export default function Footer() {
+
+  const whatsappNumber = "923098183945";
+  const whatsappMessage = "Hi! How may I help you?";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <footer className="bg-[#0f172a] text-white py-10 px-6 sm:px-12 border-t border-gray-600">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h2 className="text-2xl font-bold text-blue-600">Muhammad Mukarram</h2>
           <p className="mt-4 text-gray-300">
-            Passionate about building high-quality web and mobile applications. 
-            Let's collaborate and create something amazing!
+            Dedicated to creating powerful digital experiences.
+            Let’s team up and turn bold ideas into reality!
           </p>
           <p className="mt-4 text-sm text-gray-400">© 2025 Muhammad Mukarram. All rights reserved.</p>
         </div>
@@ -21,7 +26,7 @@ export default function Footer() {
             {["Home", "About", "Projects", "Contact"].map((item) => (
               <motion.li
                 key={item}
-                whileTap={{ scale: 0.9, color: "#3b82f6" }} 
+                whileTap={{ scale: 0.9, color: "#3b82f6" }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <Link to={`${item.toLowerCase()}`} className="hover:underline hover:cursor-pointer">
@@ -35,14 +40,23 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold text-blue-600">Connect with Me</h2>
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
-              <FaLinkedin size={20} />
+            <a href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
+              <FaWhatsapp size={20} />
             </a>
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
+            <a href="https://github.com/Mukarram685"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
               <FaGithub size={20} />
             </a>
-            <a href="#" className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
-              <FaWhatsapp size={20} />
+            <a href="https://www.linkedin.com/in/muhammad-mukarram-9220b9312/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full text-white">
+              <FaLinkedin size={20} />
             </a>
           </div>
           <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg transition">

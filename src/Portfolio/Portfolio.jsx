@@ -13,8 +13,8 @@ const Portfolio = () => {
       <Home />
       <About />
       <Contact />
-      <Projects/>
-      <Footer/>
+      <Projects />
+      <Footer />
     </div>
   );
 };

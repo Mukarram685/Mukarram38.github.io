@@ -70,7 +70,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/muhammad-mukarram-9220b9312/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 group"
@@ -79,14 +79,13 @@ function Contact() {
                 <FaLinkedinIn size={24} className="text-white" />
               </div>
               <span className="md:text-lg  font-medium text-white group-hover:text-[#007BFF] transition">
-                LinkedIn: Your Profile
+                LinkedIn: linkedin.com/Mukarram
               </span>
             </a>
 
           </div>
         </div>
 
-        {/* Right side - Contact Form */}
         <div className="flex-1 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl p-6 backdrop-blur-lg">
           <ContactForm />
         </div>

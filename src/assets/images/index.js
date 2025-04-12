@@ -14,6 +14,7 @@ import webstore3 from "./webstore3.png";
 import taskManager1 from "./taskManager1.png";
 import taskManager2 from "./taskManager2.png";
 import taskManager3 from "./taskManager3.png";
+import check from './check-mark.png'
 
 
 export {
@@ -32,5 +33,6 @@ export {
     webstore3,
     taskManager1,
     taskManager2,
-    taskManager3
+    taskManager3,
+    check
 };
