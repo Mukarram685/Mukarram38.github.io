@@ -86,7 +86,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="flex-1 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl p-6 backdrop-blur-lg">
+        <div className="flex-1 bg-gray-900 border border-gray-700 rounded-2xl shadow-xl md:p-5 p-4 backdrop-blur-lg">
           <ContactForm />
         </div>
 

@@ -60,7 +60,7 @@ const ContactForm = () => {
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-2xl bg-gray-900 p-4 md:p-10 rounded-lg shadow-lg border border-gray-700">
-        <h3 className="text-2xl font-bold text-[#007BFF] mb-6 text-center">Send a Message</h3>
+        <h3 className="text-2xl font-bold text-[#007BFF] md:mb-6 mb-4 text-center">Send a Message</h3>
         
         {submitStatus.message && (
           <div className={`mb-6 p-4 rounded-md ${submitStatus.success ? 'bg-green-900 text-green-300' : 'bg-red-900 text-red-300'}`}>
@@ -75,7 +75,7 @@ const ContactForm = () => {
           <div>
             <label htmlFor="name" className="text-gray-300 font-semibold">Name:</label>
             <input
-              className="border border-gray-600 bg-gray-800 p-3 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full text-white"
+              className="border border-gray-600 bg-gray-800 md:p-3 p-2 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full text-white"
               type="text"
               id="name"
               name="name"
@@ -91,7 +91,7 @@ const ContactForm = () => {
           <div>
             <label htmlFor="email" className="text-gray-300 font-semibold">Email:</label>
             <input
-              className="border border-gray-600 bg-gray-800 p-3 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full text-white"
+              className="border border-gray-600 bg-gray-800 md:p-3 p-2 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full text-white"
               type="email"
               id="email"
               name="email"
@@ -106,7 +106,7 @@ const ContactForm = () => {
           <div>
             <label htmlFor="message" className="text-gray-300 font-semibold">Message:</label>
             <textarea
-              className="border border-gray-600 bg-gray-800 p-3 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full h-28 text-white"
+              className="border border-gray-600 bg-gray-800 md:p-3 p-2 rounded-md focus:ring-2 focus:ring-[#007BFF] w-full h-28 text-white"
               name="message"
               id="message"
               value={formData.message}
