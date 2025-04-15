@@ -59,9 +59,11 @@ export default function Footer() {
               <FaLinkedin size={20} />
             </a>
           </div>
-          <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg transition">
-            Connect With ME
-          </button>
+          <Link to="contact" smooth={true} duration={500} offset={-70} className="hover:underline hover:cursor-pointer">
+            <button className="mt-6 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-lg transition">
+              Connect With ME
+            </button>
+          </Link>
         </div>
       </div>
 
