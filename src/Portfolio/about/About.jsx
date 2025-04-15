@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiRedux, SiFirebase, SiExpress, SiMongoose, SiMongodb, SiMongoosedotws } from "react-icons/si";
-import { about } from "../data/about";
+import { about } from "../../data/about.js";
 
 const About = () => {
 

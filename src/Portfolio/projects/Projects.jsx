@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectsList from '../Portfolio/ProjectList';
+import ProjectsList from './ProjectList';
 
 function Projects() {
   return (

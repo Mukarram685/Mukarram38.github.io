@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import ProjectComponent from "./ProjectComponent";
 import ProjectDetail from "./ProjectDetail";
-import {projects} from "../data/projects";
+import {projects} from "../../data/projects";
 
 const ProjectsList = () => {
     const [showAll, setShowAll] = useState(false);

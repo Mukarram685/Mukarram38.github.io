@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {technologies} from "../data/about";
+import {technologies} from "../../data/about";
 
 const Home = () => {
   const [index, setIndex] = useState(0);

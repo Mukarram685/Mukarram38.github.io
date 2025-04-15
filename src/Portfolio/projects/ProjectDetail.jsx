@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { check } from "../assets/images";
+import { check } from "../../assets/images";
 
 const ProjectDetail = ({ project, onClose }) => {
     if (!project) return null;
